@@ -22,7 +22,15 @@
         margin: 0;
         font-family: "PingFang SC", "Microsoft YaHei", "Nunito", sans-serif;
         background-color: var(--bg);
-        background-image: radial-gradient(circle at 10% 20%, rgb(224, 231, 255) 0%, rgb(238, 242, 255) 90%);
+        
+        /* --- 修改处：设置新背景图 --- */
+        background-image: url('https://static.vecteezy.com/system/resources/previews/011/628/869/original/cute-cartoon-world-space-day-background-free-vector.jpg');
+        background-size: cover;       /* 铺满整个屏幕 */
+        background-position: center;  /* 居中显示 */
+        background-attachment: fixed; /* 固定背景 */
+        background-repeat: no-repeat;
+        /* ----------------------- */
+
         color: var(--text-main);
         height: 100vh;
         overflow-x: hidden;
@@ -286,10 +294,10 @@
   </style>
 
   <script>
-    // Web App URL (GAS)
-    const GAS_URL = "https://script.google.com/macros/s/AKfycbxmYyVnw2QR0eH-IlwkPmu2zhFlz8zy39fZy721l7Hw0jsDFVdDrLg2XU4GGwAkQpIz/exec";
+    // Web App URL (GAS) - 修改处：已更新
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbwMz7ZujO_Zf56uL8RIpUUJ0ZsExvvZ5jJvnw5xboCJlAYebowos7oldF_vjo0ajBZi5w/exec";
     
-    // ⚠️ 课文内容：拜访书的家 (已替换)
+    // ⚠️ 课文内容：拜访书的家
     const sentences = [
       "为什么会打雷下雨？为什么一年有四季？为什么有大海和陆地？为什么海龟流眼泪？为什么昆虫要脱壳？",
       "为什么有文字？为什么要读书？为什么中秋节吃月饼？谁是孔子？谁是李白？《西游记》里谁会七十二变？",
@@ -438,4 +446,5 @@
     };
   </script>
 </body>
+
 </html>
